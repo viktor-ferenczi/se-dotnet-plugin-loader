@@ -1,6 +1,6 @@
-# Plugin Loader and Space Engineers Launcher running on .NET 8.0 
+# Using Plugin Loader on .NET 8.0 
 
-Plugin Loader and Space Engineers Launcher ported to .NET 8.0.
+Here you can find Plugin Loader and Space Engineers Launcher ported to .NET 8.0.
 
 ## Usage
 
@@ -17,7 +17,14 @@ Run the game by running the `SpaceEngineersLauncher` project.
 Alternatively build and run it from the command line by executing the
 `BuildAndRunWithPL.bat` script.
 
+## Compatibility
+
+Please note, that plugins using transpiler patches or verifying the bytecode would likely break.
+Incompatible plugins could be made compatible with the .NET 8.0 build of the game, they just need some work.
+The plugin authors may make them available at their discretion either as an alternate version or by using
+runtime conditions on the IL code.
+
 ## References
 
-- [Plugin Loader](https://github.com/sepluginloader/)
+- Original [Plugin Loader](https://github.com/sepluginloader/)
 - [Space Engineers on .NET 8.0](https://github.com/viktor-ferenczi/se-dotnet-game)
