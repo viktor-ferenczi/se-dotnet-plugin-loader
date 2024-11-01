@@ -1,4 +1,4 @@
-# Using Plugin Loader on .NET 8.0 
+# Plugin Loader for SE on .NET 8.0
 
 Here you can find Plugin Loader and Space Engineers Launcher ported to .NET 8.0.
 
