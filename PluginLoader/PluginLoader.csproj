@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>default</LangVersion>
+        <AssemblyVersion>1.12.6.0</AssemblyVersion>
+        <FileVersion>1.12.6.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="splash.gif" />
+      <Resource Include="splash.gif">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Lib.Harmony.Thin" Version="2.3.3" />
+      <PackageReference Include="Microsoft.CodeAnalysis" Version="4.11.0" />
+      <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="NLog" Version="5.3.4" />
+      <PackageReference Include="NuGet.Resolver" Version="6.11.1" />
+      <PackageReference Include="protobuf-net" Version="3.2.45" />
+      <PackageReference Include="protobuf-net.Core" Version="3.2.45" />
+      <PackageReference Include="Steamworks.NET" Version="20.1.0" />
+      <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+      <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+      <PackageReference Include="System.Net.Http" Version="4.3.4" />
+      <PackageReference Include="System.Reflection" Version="4.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sandbox.Game\Sandbox.Game.csproj" />
+      <ProjectReference Include="..\Sandbox.Graphics\Sandbox.Graphics.csproj" />
+      <ProjectReference Include="..\SpaceEngineers.Game\SpaceEngineers.Game.csproj" />
+      <ProjectReference Include="..\VRage.Game\VRage.Game.csproj" />
+      <ProjectReference Include="..\VRage.Input\VRage.Input.csproj" />
+      <ProjectReference Include="..\VRage.Scripting\VRage.Scripting.csproj" />
+      <ProjectReference Include="..\VRage\VRage.csproj" />
+    </ItemGroup>
+
+</Project>

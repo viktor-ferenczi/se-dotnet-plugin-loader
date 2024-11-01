@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>default</LangVersion>
+        <AssemblyVersion>1.12.6.0</AssemblyVersion>
+        <FileVersion>1.12.6.0</FileVersion>
+        <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="splash.gif" />
+      <EmbeddedResource Include="splash.gif" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PluginLoader\PluginLoader.csproj" />
+      <ProjectReference Include="..\Sandbox.Game\Sandbox.Game.csproj" />
+      <ProjectReference Include="..\SpaceEngineers\SpaceEngineers.csproj" />
+      <ProjectReference Include="..\VRage\VRage.csproj" />
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="cd &quot;$(SolutionDir)&quot;&#xA;CopyBinaryDependencies.bat &quot;$(TargetDir)&quot;" />
+    </Target>
+
+</Project>
