@@ -7,15 +7,14 @@ Here you can find Plugin Loader and Space Engineers Launcher ported to .NET 8.0.
 Clone the [se-dotnet-game](https://github.com/viktor-ferenczi/se-dotnet-game)
 repository first and follow the instructions there to build the game.
 
-Once it works, then you can add Plugin Loader by copying over the projects
-from this repository into your local Git working copy folder which has the
-decompiled game source in it. Overwrite the solution file or add the two
-projects manually in your IDE.
+Once it works, copy over the projects from this repository into your local Git
+working copy folder, the one which has the decompiled game source in it.
+Overwrite the solution file or add the two projects manually in your IDE.
 
-Run the game by running the `SpaceEngineersLauncher` project.
+Build and run the game with Plugin Loader's Launcher from the command line
+by executing the `BuildAndRunLauncher.bat` script.
 
-Alternatively build and run it from the command line by executing the
-`BuildAndRunWithPL.bat` script.
+Alternatively, run the game by running the `SpaceEngineersLauncher` project.
 
 ## Compatibility
 
